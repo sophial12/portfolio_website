@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sophia Liu | Art Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="site-header" id="top">
+        <div class="brand">
+            <span class="brand__mark">SX</span>
+            <div>
+                <p class="brand__title">Sophia Liu</p>
+                <p class="brand__subtitle">Visual Artist & Designer</p>
+            </div>
+        </div>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <span class="theme-toggle__icon" aria-hidden="true"></span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="heroTitle">
+            <div class="hero__content">
+                <h1 id="heroTitle">Curated Artistry in Professional and Personal Realms</h1>
+                <p>
+                    Showcasing a portfolio that bridges commissioned professional work and passion-driven personal
+                    projects.
+                    Explore an evolving gallery of visuals, concepts, and narratives crafted with intention and
+                    restraint.
+                </p>
+                <div class="hero__actions">
+                    <a class="button" href="#portfolio">View Portfolio</a>
+                    <a class="button button--ghost" href="#contact">Let's Connect</a>
+                </div>
+            </div>
+            <div class="hero__media" aria-hidden="true">
+                <div class="hero__placeholder">Feature artwork preview</div>
+            </div>
+        </section>
+
+        <section class="about" id="about" aria-labelledby="aboutTitle">
+            <div class="section-heading">
+                <h2 id="aboutTitle">About Me</h2>
+                <p class="section-heading__subtitle">Artist statement & background</p>
+            </div>
+            <div class="about__content">
+                <p>
+                    I'm Sophia Liu, a multidisciplinary visual artist focusing on thoughtful compositions, muted
+                    palettes, and storytelling through subtle details.
+                    My practice spans branded illustration systems, editorial layouts, and tactile mixed-media
+                    explorations. Each piece reflects a balance between structured professionalism and intuitive play.
+                </p>
+                <p>
+                    With a foundation in design strategy, I collaborate with clients to translate ideas into cohesive
+                    visual narratives. Outside of commissioned work, I experiment with personal series that investigate
+                    memory, texture, and form.
+                </p>
+                <a class="about__cta" href="#contact">Currently welcoming new collaborations →</a>
+            </div>
+        </section>
+
+        <section class="portfolio" id="portfolio" aria-labelledby="portfolioTitle">
+            <div class="section-heading">
+                <h2 id="portfolioTitle">Portfolio</h2>
+                <p class="section-heading__subtitle">Browse professional and personal collections</p>
+            </div>
+
+            <div class="portfolio__filters" role="tablist" aria-label="Portfolio filters">
+                <button class="filter-button is-active" data-filter="professional" role="tab"
+                    aria-selected="true">Professional Work</button>
+                <button class="filter-button" data-filter="personal" role="tab" aria-selected="false">Personal
+                    Projects</button>
+            </div>
+
+            <div class="portfolio__grid" id="portfolioGrid">
+                <article class="portfolio-card" data-category="professional">
+                    <div class="portfolio-card__media">
+                        <a href="#" class="portfolio-card__link">
+                            <img src="https://via.placeholder.com/560x360" alt="Placeholder for professional project" />
+                        </a>
+                    </div>
+                    <div class="portfolio-card__body">
+                        <h3 class="portfolio-card__title">Client Campaign Series</h3>
+                        <p class="portfolio-card__description">
+                            Temporary text describing a curated set of brand illustrations created for a global launch.
+                        </p>
+                        <a class="portfolio-card__cta" href="#">View full case study</a>
+                    </div>
+                </article>
+
+                <article class="portfolio-card" data-category="professional">
+                    <div class="portfolio-card__media">
+                        <a href="#" class="portfolio-card__link">
+                            <img src="https://via.placeholder.com/560x360" alt="Placeholder for professional project" />
+                        </a>
+                    </div>
+                    <div class="portfolio-card__body">
+                        <h3 class="portfolio-card__title">Editorial Illustrations</h3>
+                        <p class="portfolio-card__description">
+                            Temporary description for an editorial artwork series commissioned by a lifestyle
+                            publication.
+                        </p>
+                        <a class="portfolio-card__cta" href="#">View project overview</a>
+                    </div>
+                </article>
+
+                <article class="portfolio-card" data-category="professional">
+                    <div class="portfolio-card__media">
+                        <a href="#" class="portfolio-card__link">
+                            <img src="https://via.placeholder.com/560x360" alt="Placeholder for professional project" />
+                        </a>
+                    </div>
+                    <div class="portfolio-card__body">
+                        <h3 class="portfolio-card__title">Brand System Toolkit</h3>
+                        <p class="portfolio-card__description">
+                            Temporary note on a modular brand toolkit designed for a contemporary gallery launch.
+                        </p>
+                        <a class="portfolio-card__cta" href="#">Explore highlights</a>
+                    </div>
+                </article>
+
+                <article class="portfolio-card" data-category="personal">
+                    <div class="portfolio-card__media">
+                        <a href="#" class="portfolio-card__link">
+                            <img src="https://via.placeholder.com/560x360" alt="Placeholder for personal project" />
+                        </a>
+                    </div>
+                    <div class="portfolio-card__body">
+                        <h3 class="portfolio-card__title">Memory Atlas Series</h3>
+                        <p class="portfolio-card__description">
+                            Temporary text for a personal exploration of layered textures inspired by travel journals.
+                        </p>
+                        <a class="portfolio-card__cta" href="#">Peek into the series</a>
+                    </div>
+                </article>
+
+                <article class="portfolio-card" data-category="personal">
+                    <div class="portfolio-card__media">
+                        <a href="#" class="portfolio-card__link">
+                            <img src="https://via.placeholder.com/560x360" alt="Placeholder for personal project" />
+                        </a>
+                    </div>
+                    <div class="portfolio-card__body">
+                        <h3 class="portfolio-card__title">Muted Landscapes</h3>
+                        <p class="portfolio-card__description">
+                            Temporary description for a quiet collection of minimalist landscape studies.
+                        </p>
+                        <a class="portfolio-card__cta" href="#">View painting notes</a>
+                    </div>
+                </article>
+
+                <article class="portfolio-card" data-category="personal">
+                    <div class="portfolio-card__media">
+                        <a href="#" class="portfolio-card__link">
+                            <img src="https://via.placeholder.com/560x360" alt="Placeholder for personal project" />
+                        </a>
+                    </div>
+                    <div class="portfolio-card__body">
+                        <h3 class="portfolio-card__title">Form Study Sketchbook</h3>
+                        <p class="portfolio-card__description">
+                            Temporary detail on a sketchbook exploring geometric forms and tonal layering.
+                        </p>
+                        <a class="portfolio-card__cta" href="#">Browse sketchbook</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="callout" aria-labelledby="calloutTitle">
+            <h2 id="calloutTitle">Let's Collaborate</h2>
+            <p>
+                For inquiries, commissions, or speaking engagements, reach out with a brief describing the vision,
+                timeline, and desired outcomes. I'd love to discuss how we can create something thoughtful together.
+            </p>
+            <a class="button" href="#contact">Contact Sophia</a>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="site-footer__grid">
+            <div>
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
+                <p>Studio: Remote / By Appointment</p>
+            </div>
+            <div>
+                <h3>Social</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Behance</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Newsletter</h3>
+                <form class="newsletter-form" action="#" method="post">
+                    <label for="newsletterEmail">Stay in the loop with new work</label>
+                    <div class="newsletter-form__input">
+                        <input id="newsletterEmail" name="email" type="email" placeholder="Temporary email form"
+                            required />
+                        <button type="submit" class="button">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <p class="site-footer__note">© <span id="year"></span> Sophia Liu. All placeholder content subject to change.
+        </p>
+        <a class="site-footer__top" href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
