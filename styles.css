@@ -499,6 +499,13 @@ main {
   right: 10px;
 }
 
+.portfolio-card[data-category="personal"] .portfolio-card__media img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* keeps it square */
+  object-fit: cover;   /* crops nicely instead of stretching */
+  border-radius: 8px;  /* optional, to match your card styling */
+}
+
 
 @media (max-width: 768px) {
   .site-header {
