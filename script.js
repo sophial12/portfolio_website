@@ -105,3 +105,39 @@ carousel.addEventListener('mouseleave', () => {
     updateCarousel();
   }, 5000);
 });
+
+// Smooth-hash navigation helper
+(() => {
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Helper to scroll to an element with optional smooth behavior
+    const scrollToEl = (el) => {
+        if (!el) return;
+        const top = el.getBoundingClientRect().top + window.pageYOffset - 20; // offset a little from top
+        window.scrollTo({ top, behavior: prefersReduced ? 'auto' : 'smooth' });
+    };
+
+    // On initial load with hash, attempt to smooth scroll to it
+    if (location.hash) {
+        const id = location.hash.slice(1);
+        const target = document.getElementById(id) || document.querySelector(`[name="${id}"]`);
+        // wait until layout paints
+        window.requestAnimationFrame(() => scrollToEl(target));
+    }
+
+    // Intercept same-page anchor clicks to smooth scroll instead of jump
+    document.addEventListener('click', (e) => {
+        const a = e.target.closest('a[href^="#"]');
+        if (!a) return;
+        const hash = a.getAttribute('href');
+        if (!hash || hash === '#') return; // ignore empty
+        const id = hash.slice(1);
+        const target = document.getElementById(id) || document.querySelector(`[name="${id}"]`);
+        if (target) {
+            e.preventDefault();
+            scrollToEl(target);
+            // update the hash without jumping
+            history.pushState(null, '', hash);
+        }
+    });
+})();
