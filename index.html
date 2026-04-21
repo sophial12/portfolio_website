@@ -1,295 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sophia Liu | Art Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montserrat:wght@400;500;600&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sophia's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <header class="site-header" id="top">
-        <div class="brand">
-            <span class="brand__mark">SX</span>
-            <div>
-                <p class="brand__title">Sophia Liu</p>
-                <p class="brand__subtitle">Visual Artist & Designer</p>
-            </div>
-        </div>
-        <nav class="site-nav" aria-label="Primary navigation">
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-            <span class="theme-toggle__icon" aria-hidden="true"></span>
-        </button>
+
+    <header class="sticky-header">
+        <h1>Sophia's Portfolio</h1>
+        <a href="mailto:sophia.lxw12@gmail.com" class="contact-btn">Contact</a>
     </header>
 
-    <main>
-        <section class="hero" aria-labelledby="heroTitle">
-            <div class="hero__content">
-                <h1 id="heroTitle">Visual Stories, <br> Creatively Told.</h1>
-                <p>
-                    A portfolio showcasing graphic design that balances artistry and strategy.
-                    From professional commissions to passion projects, every piece is crafted to connect and inspire.
-                </p>
-                <div class="hero__actions">
-                    <a class="button" href="#portfolio">View Portfolio</a>
-                    <a class="button button--ghost" href="#contact">Let's Connect</a>
-                </div>
-            </div>
-            <div class="hero__media" aria-hidden="true">
-                <div class="carousel">
-                    <div class="carousel-track">
-                        <img src="images/Charcuterie2.jpg" alt="MISU CAT 1" />
-                        <img src="images/Eczema_Close.jpg" alt="MISU CAT 2" />
-                        <img src="images/Suzy.jpg" alt="MISU CAT 3" />
-                    </div>
+    <section>
 
-                    <button class="carousel-btn prev" aria-label="Previous slide">&#10094;</button>
-                    <button class="carousel-btn next" aria-label="Next slide">&#10095;</button>
-                </div>
-            </div>
-        </section>
+        <div class="container">
+            <img src="images/Sophia_Liu_Headshot.jpeg" class="headshot" alt="Headshot of an Asian girl in a suit standing in a stairwell.">
+            
+            <div class="about-text">
+                <h2>Hello, my name is Sophia Liu,</h2>
+                <h3 class="about-subtext">and I'm an interdisciplinary artist.</h3>
 
-        <section class="about" id="about" aria-labelledby="aboutTitle">
-            <div>
-                <div class="section-heading">
-                    <h2 id="aboutTitle">About Me</h2>
-                    <p class="section-heading__subtitle">Artist statement & background</p>
-                </div>
-                <div class="about__content">
-                    <p>
-                        My name is Sophia Liu, a sophomore at the University of Michigan majoring in Economics and
-                        minoring
-                        in UX Design.
-                        I am a multidisciplinary visual artist who focuses on thoughtful compositions and storytelling
-                        through details.
-                        My passion for design sparked at a young age during a period of illness, when drawing with
-                        crayons
-                        and markers became both a comfort and a creative escape.
-                        Since then, I have used art as both a form of healing and a means of expression, exploring
-                        various
-                        mediums and creating projects that convey my thoughts and emotions.
-                        My practice spans branded illustrations, sculptures, and tactile mixed-media explorations, and
-                        I've
-                        recently learned to expand my skills into digital art and graphic design.
-                    </p>
-                    <p>
-                        Grounded in design strategy, I collaborate with clients to transform ideas into cohesive visual
-                        narratives, striking a balance
-                        between structured professionalism and intuitive creativity in every piece.
-                    </p>
-                    <a class="about__cta" href="#contact">Currently welcoming new collaborations →</a>
-                </div>
-            </div>
-            <div class="about__image">
-                <img src="images/Sophia_Liu_Headshot.jpeg" alt="Portrait of Sophia Liu">
-            </div>
-        </section>
-
-        <section class="portfolio" id="portfolio" aria-labelledby="portfolioTitle">
-            <div class="section-heading">
-                <h2 id="portfolioTitle">Portfolio</h2>
-                <p class="section-heading__subtitle">Browse professional and personal collections</p>
-            </div>
-
-            <div class="portfolio__filters" role="tablist" aria-label="Portfolio filters">
-                <button class="filter-button is-active" data-filter="professional" role="tab"
-                    aria-selected="true">Professional Work</button>
-                <button class="filter-button" data-filter="personal" role="tab" aria-selected="false">Personal
-                    Projects</button>
-            </div>
-
-            <div class="portfolio__grid" id="portfolioGrid">
-                <article class="portfolio-card" data-category="professional">
-                    <div class="portfolio-card__media">
-                        <a href="projects/justair.html" class="portfolio-card__link">
-                            <img src="images/JustAir_Awareness_Flyer1.png" alt="Placeholder for professional project" />
-                        </a>
+                <details class="about-collapsible">
+                    <summary>About Me</summary>
+                    <div class="about-content">
+                        <p>Hi, my name is Sophia, and I have been using art to tell stories my entire life. 
+                        My passion for creating began in childhood during a period of illness, when crayons and markers 
+                        became both a distraction and a source of comfort.</p>
+                        <p>As I grew older, art became a defining part of my identity. Every piece I created captured a different 
+                        fragment of my story, and together, they formed a visual archive of my growth through moments of curiosity, 
+                        resilience, and imagination that continue to influence how I see the world.</p>
                     </div>
-                    <div class="portfolio-card__body">
-                        <h3 class="portfolio-card__title">JustAir Campaign</h3>
-                        <p class="portfolio-card__description">
-                            Mockups of visual assets, including flyers, Instagram posts, and business cards, to boost campaign visibility and engagement.
-                        </p>
-                        <a class="portfolio-card__cta" href="projects/justair.html">View full campaign</a>
-                    </div>
-                </article>
-
-                <article class="portfolio-card" data-category="professional">
-                    <div class="portfolio-card__media">
-                        <a href="projects/ledog_lesoup.html" class="portfolio-card__link">
-                            <img src="images/Ledog_Flyer2.png" alt="Placeholder for professional project" />
-                        </a>
-                    </div>
-                    <div class="portfolio-card__body">
-                        <h3 class="portfolio-card__title">LeDog LeSoup Case Study</h3>
-                        <p class="portfolio-card__description">
-                            Temporary description for an editorial artwork series commissioned by a lifestyle
-                            publication.
-                        </p>
-                        <a class="portfolio-card__cta" href="projects/ledog_lesoup.html">View Case Study</a>
-                    </div>
-                </article>
-
-                <article class="portfolio-card" data-category="professional">
-                    <div class="portfolio-card__media">
-                        <a href="projects/project.html" class="portfolio-card__link">
-                            <img src="images/IMG_3623.jpeg" alt="Placeholder for professional project" />
-                        </a>
-                    </div>
-                    <div class="portfolio-card__body">
-                        <h3 class="portfolio-card__title">Brand System Toolkit</h3>
-                        <p class="portfolio-card__description">
-                            Temporary note on a modular brand toolkit designed for a contemporary gallery launch.
-                        </p>
-                        <a class="portfolio-card__cta" href="projects/project.html">Explore highlights</a>
-                    </div>
-                </article>
-
-                <article class="portfolio-card" data-category="personal">
-                    <div class="portfolio-card__media">
-                        <a href="projects/food.html" class="portfolio-card__link">
-                            <img src="images/Charcuterie1.jpg" alt="Placeholder for personal project" />
-                        </a>
-                    </div>
-                    <div class="portfolio-card__body">
-                        <h3 class="portfolio-card__title">Food: The Boundaries Between Raw and Ripe</h3>
-                        <p class="portfolio-card__description">
-                            Temporary text for a personal exploration of layered textures inspired by travel journals.
-                        </p>
-                        <a class="portfolio-card__cta" href="projects/food.html">Peek into the series</a>
-                    </div>
-                </article>
-
-                <article class="portfolio-card" data-category="personal">
-                    <div class="portfolio-card__media">
-                        <a href="projects/down_the_drain.html" class="portfolio-card__link">
-                            <img src="images/Eczema.jpg" alt="Placeholder for personal project" />
-                        </a>
-                    </div>
-                    <div class="portfolio-card__body">
-                        <h3 class="portfolio-card__title">Down the Drain</h3>
-                        <p class="portfolio-card__description">
-                            Temporary description for a quiet collection of minimalist landscape studies.
-                        </p>
-                        <a class="portfolio-card__cta" href="projects/down_the_drain.html">View painting notes</a>
-                    </div>
-                </article>
-
-                <article class="portfolio-card" data-category="personal">
-                    <div class="portfolio-card__media">
-                        <a href="projects/city_of_apples.html" class="portfolio-card__link">
-                            <img src="images/Apples.jpg" alt="Placeholder for personal project" />
-                        </a>
-                    </div>
-                    <div class="portfolio-card__body">
-                        <h3 class="portfolio-card__title">City of Apples</h3>
-                        <p class="portfolio-card__description">
-                            Temporary detail on a sketchbook exploring geometric forms and tonal layering.
-                        </p>
-                        <a class="portfolio-card__cta" href="projects/city_of_apples.html">Browse sketchbook</a>
-                    </div>
-                </article>
-
-                <article class="portfolio-card" data-category="personal">
-                    <div class="portfolio-card__media">
-                        <a href="projects/longevity_noodles.html" class="portfolio-card__link">
-                            <img src="images/Noodle.jpg" alt="Placeholder for personal project" />
-                        </a>
-                    </div>
-                    <div class="portfolio-card__body">
-                        <h3 class="portfolio-card__title">Longevity Noodles</h3>
-                        <p class="portfolio-card__description">
-                            Temporary detail on a sketchbook exploring geometric forms and tonal layering.
-                        </p>
-                        <a class="portfolio-card__cta" href="projects/longevity_noodles.html">Browse sketchbook</a>
-                    </div>
-                </article>
-
-                <article class="portfolio-card" data-category="personal">
-                    <div class="portfolio-card__media">
-                        <a href="projects/unidentifiable.html" class="portfolio-card__link">
-                            <img src="images/Suzy.jpg" alt="Placeholder for personal project" />
-                        </a>
-                    </div>
-                    <div class="portfolio-card__body">
-                        <h3 class="portfolio-card__title">Unidentifiable</h3>
-                        <p class="portfolio-card__description">
-                            Temporary detail on a sketchbook exploring geometric forms and tonal layering.
-                        </p>
-                        <a class="portfolio-card__cta" href="projects/unidentifiable.html">Browse sketchbook</a>
-                    </div>
-                </article>
-
-                <article class="portfolio-card" data-category="personal">
-                    <div class="portfolio-card__media">
-                        <a href="projects/alienation.html" class="portfolio-card__link">
-                            <img src="images/Lamp.jpg" alt="Placeholder for personal project" />
-                        </a>
-                    </div>
-                    <div class="portfolio-card__body">
-                        <h3 class="portfolio-card__title">Alienation</h3>
-                        <p class="portfolio-card__description">
-                            Temporary detail on a sketchbook exploring geometric forms and tonal layering.
-                        </p>
-                        <a class="portfolio-card__cta" href="projects/alienation.html">Browse sketchbook</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="callout" aria-labelledby="calloutTitle">
-            <h2 id="calloutTitle">Let's Collaborate</h2>
-            <p>
-                For inquiries, commissions, or speaking engagements, reach out with a brief describing the vision,
-                timeline, and desired outcomes. I'd love to discuss how we can create something thoughtful together.
-            </p>
-            <a class="button" href="#contact">Contact Sophia</a>
-        </section>
-    </main>
-
-    <footer class="site-footer" id="contact">
-        <div class="site-footer__grid">
-            <div>
-                <h3>Contact</h3>
-                <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
-                <p>Studio: Remote / By Appointment</p>
-            </div>
-            <div>
-                <h3>Social</h3>
-                <ul class="footer-links">
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Behance</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3>Newsletter</h3>
-                <form class="newsletter-form" action="#" method="post">
-                    <label for="newsletterEmail">Stay in the loop with new work</label>
-                    <div class="newsletter-form__input">
-                        <input id="newsletterEmail" name="email" type="email" placeholder="Temporary email form"
-                            required />
-                        <button type="submit" class="button">Submit</button>
-                    </div>
-                </form>
+                </details>
             </div>
         </div>
-        <p class="site-footer__note">© <span id="year"></span> Sophia Liu. All placeholder content subject to change.
-        </p>
-        <a class="site-footer__top" href="#top">Back to top</a>
-    </footer>
+    </section>
 
+    <section id="projects">
+    <h2 class="subheader">Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="card">
+                <a href="project-cards/food.html">
+                    <h3>Food: The Boundaries Between Raw and Ripe</h3>
+                    <img src="images/Charcuterie1.jpg" class="project-img" alt="Charcuterie board with whole fish, lychee, lotus root, and grapefruit on a wooden board.">
+                </a>
+                <p><small>15"x15"x7" Acrylic on fabric 2023</small></p>
+            </div>
+
+           <div class="card">
+                <a href="project-cards/drain.html">
+                    <h3>Down the Drain</h3>
+                    <img src="images/Eczema.jpg" class="project-img" alt="Girl staring at herself in bathroom mirror while washing her eczema-covered hands.">
+                </a>
+                <p><small>18"x24"x6" Mixed Media 2023</small></p>
+            </div>
+
+            <div class="card">
+                <a href="project-cards/noodles.html">
+                    <h3>Longevity Noodles</h3>
+                    <img src="images/Noodle.jpg" class="project-img" alt="Yellow noodles made of yarn sculpted into staircase with people in different stages of life.">
+                </a>
+                <p><small>9"x9"x35" Sculpture 2023</small></p>
+            </div>
+
+            <div class="card">
+                <a href="project-cards/alienation.html">
+                    <h3>Alienation</h3>
+                    <img src="images/Lamp.jpg" class="project-img" alt="Lamp with metal parts attached, symbolizing a man hunched over.">
+                </a>
+                <p><small>16"x20" Charcoal 2023</small></p>
+            </div>
+
+            <div class="card">
+                <a href="project-cards/apples.html">
+                    <h3>City of Apples</h3>
+                    <img src="images/Apples.jpg" class="project-img" alt="Apples and glass cups stacked together.">
+                </a>
+                <p><small>20"x16" Oil pastel 2023</small></p>
+            </div>
+
+            <div class="card">
+                <a href="project-cards/unidentifiable.html">
+                    <h3>Unidentifiable</h3>
+                    <img src="images/Suzy.jpg" class="project-img" alt="Doll staring at its reflection in water.">
+                </a>
+                <p><small>16"x20" Oil on Canvas 2022</small></p>
+            </div>
+
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
-
 </html>
